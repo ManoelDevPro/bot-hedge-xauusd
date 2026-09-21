@@ -9,7 +9,7 @@ LOT = 0.01
 GRID_DISTANCE = 12.0
 PROFIT = 12.0
 TARGET_USD = 75 #   Meta de lucro total para reiniciar o bot
-MAX_ORDERS = 15
+MAX_ORDERS = 8
 # Não será mais usado pelo trailing
 # PROFIT_TO_CLOSE = 6.0
 
