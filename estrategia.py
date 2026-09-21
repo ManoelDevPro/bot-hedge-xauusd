@@ -18,13 +18,6 @@ from config_volume import (
 max_profit_seen = {}
 
 
-# ============================================================
-# 🎯 TRAILING PROFIT
-# ============================================================
-
-#TRAILING_PERCENT = 0.70
-# 0.70 = permite devolver no máximo 30% do lucro máximo
-
 def processar_trailing(
     positions,
     close_position
