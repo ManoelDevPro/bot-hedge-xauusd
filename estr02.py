@@ -2,6 +2,11 @@ import MetaTrader5 as mt5
 import logging
 
 
+from config02 import (
+    PROFIT,
+    TRAILING_PERCENT
+)
+
 # ============================================================
 # MEMÓRIA DO TRAILING
 # ============================================================
@@ -13,8 +18,8 @@ max_profit_seen = {}
 # CONFIGURAÇÃO DO TRAILING
 # ============================================================
 
-PROFIT = 12.0
-TRAILING_PERCENT = 0.50
+#PROFIT = 12.0
+#TRAILING_PERCENT = 0.50
 
 
 # ============================================================
