@@ -6,10 +6,10 @@ load_dotenv()
 # CONFIG DA ESTRATÉGIA - PODE MEXER
 SYMBOL = "XAUUSD"
 LOT = 0.01
-GRID_DISTANCE = 12.0
-PROFIT = 12.0
-TARGET_USD = 60 #   Meta de lucro total para reiniciar o bot
-MAX_ORDERS = 8
+GRID_DISTANCE = 8.0
+PROFIT = 5.5
+TARGET_USD = 12 #   Meta de lucro total para reiniciar o bot
+MAX_ORDERS = 4  
 TRAILING_PERCENT = 0.80
 # 0.80 = permite devolver no máximo 20% do lucro máximo
 
