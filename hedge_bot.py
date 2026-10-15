@@ -650,11 +650,11 @@ try:
             )
 
 
-            logging.info(
-                f"⚖️ Volume | "
-                f"BUY={buy_volume:.2f} | "
-                f"SELL={sell_volume:.2f}"
-            )
+            #logging.info(
+             #   f"⚖️ Volume | "
+              #  f"BUY={buy_volume:.2f} | "
+               # f"SELL={sell_volume:.2f}"
+            #)
 
 
             # =================================================
