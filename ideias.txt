@@ -5,3 +5,11 @@ GRID_DISTANCE = 35.0 # ou até 40.0
 MAX_ORDERS = 5      # que vai virar 10 no total (5 buy + 5 sell)
 PROFIT = 20.0
 TARGET_USD = 20 ou 30 # meta de 2-3% ao dia, não 75
+
+
+
+            #logging.info(
+             #   f"⚖️ Volume | "
+              #  f"BUY={buy_volume:.2f} | "
+               # f"SELL={sell_volume:.2f}"
+            #)
