@@ -10,6 +10,7 @@ GRID_DISTANCE = 8.0
 PROFIT = 5.5
 TARGET_USD = 12 #   Meta de lucro total para reiniciar o bot
 MAX_ORDERS = 8
+STOP_LOSS_USD = -2
 TRAILING_PERCENT = 0.80
 # 0.80 = permite devolver no máximo 20% do lucro máximo
 

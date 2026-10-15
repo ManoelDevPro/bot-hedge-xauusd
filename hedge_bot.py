@@ -4,6 +4,7 @@ import logging
 
 from config_volume import (
     SYMBOL,
+    STOP_LOSS_USD,
     LOT,
     MT5_LOGIN,
     MT5_PASSWORD,
@@ -515,6 +516,9 @@ def mercado_aberto():
 
 meta_batida = False
 
+# STOP LOSS GLOBAL: encerra o robô ao atingir esta perda em USD
+#STOP_LOSS_USD = -2
+
 
 try:
 
@@ -557,6 +561,36 @@ try:
             positions = get_positions()
 
             equity = get_equity()
+
+            # =================================================
+            # STOP LOSS GLOBAL
+            # =================================================
+
+            profit_total = equity - initial_balance
+
+            if profit_total <= STOP_LOSS_USD:
+
+                logging.warning(
+                    f"🛑 STOP LOSS GLOBAL ATINGIDO | "
+                    f"Resultado: {profit_total:.2f} USD | "
+                    f"Limite: {STOP_LOSS_USD:.2f} USD"
+                )
+
+                positions = get_positions()
+
+                if positions:
+                    logging.warning(
+                        "🔒 Fechando todas as posições por stop loss..."
+                    )
+
+                    for pos in positions:
+                        close_position(pos)
+
+                logging.warning(
+                    "⛔ Robô encerrado após atingir o stop loss global."
+                )
+
+                break
 
 
             # =================================================
